@@ -1,0 +1,29 @@
+{
+  "name": "amp_split_css",
+  "version": "0.0.1",
+  "description": "Project to generate a Gulp task to split css for one AMP Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mutantes/amp_split_css.git"
+  },
+  "keywords": [
+    "amp",
+    "gulp",
+    "css",
+    "sass"
+  ],
+  "author": "Sergio Córcoles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mutantes/amp_split_css/issues"
+  },
+  "homepage": "https://github.com/mutantes/amp_split_css#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
