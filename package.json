@@ -23,7 +23,12 @@
   },
   "homepage": "https://github.com/mutantes/amp_split_css#readme",
   "devDependencies": {
+    "ansi-colors": "^2.0.1",
+    "fancy-log": "^1.3.2",
     "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-size": "^3.0.0"
   }
 }
