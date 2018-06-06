@@ -13,9 +13,8 @@ let build = (directory = "content") => {
   const maxSize = 500;
 
   return gulp
-    .src(["./src/common/**/*.scss", `./src/${directory}/**/*.scss`])
-    .pipe(concat(`${directory}.min.scss`))
-    .pipe(sass().on("error", sass.logError))
+    .src(["./src/common/**/*.css", `./src/${directory}/**/*.css`])
+    .pipe(concat(`${directory}.min.css`))
     .pipe(cleanCSS())
     .pipe(fileSize)
     .pipe(gulp.dest("./dist/"))
@@ -38,7 +37,7 @@ gulp.task("content", () => build("content"));
 gulp.task("cards", () => build("cards"));
 
 gulp.task("watch", () => {
-  gulp.watch(["src/cards/**/*.scss"], ["cards"]);
-  gulp.watch(["src/content/**/*.scss"], ["content"]);
-  gulp.watch(["src/common/**/*.scss"], ["cards", "content"]);
+  gulp.watch(["src/cards/**/*.css"], ["cards"]);
+  gulp.watch(["src/content/**/*.css"], ["content"]);
+  gulp.watch(["src/common/**/*.css"], ["cards", "content"]);
 });
